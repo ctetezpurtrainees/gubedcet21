@@ -37,6 +37,13 @@ div.b {
     padding: 10px;
     color: Blue;
 }
+.lists {
+    text-align: center;
+    font-size: 1.0em;
+    letter-spacing: 1px;
+    padding: 5px;
+    color: Blue;
+}
 .gallery-image {
   padding: 20px;
   display: flex;
@@ -109,8 +116,6 @@ div.b {
 <body>
 <div class="b">
 <h3><p style="color:Blue;">You can view details of the colleges by choosing the college from the list given below</p></h3>
-
-
 <select name="colleges" onchange="javascript:handleSelect(this)"> 
 <option >---------Select College---------</option>
 <option value="https://twake.github.io/gubedcet21/colleges/aspm">Asom Sikshak Prashikshan Mahavidyalaya</option> 
@@ -158,7 +163,7 @@ function handleSelect(elm){
     window.location = elm.value+".html"; /* .html if html file */ 
 } 
 </script> 
-
+</div>
 
 <br/><br/>
 <p class="heading">Name of College</p>
@@ -219,8 +224,8 @@ function handleSelect(elm){
       </div> 
     </div>
   </div>
-</h3><p style="color:Blue;"><a href="https://raw.githubusercontent.com/twake/gubedcet21/main/assets/list.pdf" target="_blank" rel="noopener norefferer"> Click here for the list of the Affiliated Colleges (as per 05/01/2022 Notice).</a></p></h3>
-</div>
+</h3><p class="lists" style="color:Blue;"><a href="https://raw.githubusercontent.com/twake/gubedcet21/main/assets/list.pdf" target="_blank" rel="noopener norefferer"> Click here for the list of the Affiliated Colleges (as per 05/01/2022 Notice).</a></p></h3>
+
 <p><a href="https://github.com/twake/gubedcet21/" target="_blank" rel="noopener norefferer">Source Code</a><br/>
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener norefferer"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener norefferer">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
 
