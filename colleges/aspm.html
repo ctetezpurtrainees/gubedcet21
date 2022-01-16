@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link href="https://fonts.googleapis.com/css?family=Raleway:600,900" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Faces, Places</title>
 <meta name="description" content="basic idea of the colleges">
@@ -8,7 +9,101 @@
 </head>
 <style>
 div.b {
-  line-height: 1.2;
+    line-height: 1.2;
+    text-align: center;
+    font-size: 1.4em;
+    letter-spacing: 1px;
+    padding: 5px;
+    color: Blue;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+.heading {
+    text-align: center;
+    font-size: 2.0em;
+    letter-spacing: 1px;
+    padding: 40px;
+    color: Blue;
+}
+.desc {
+    text-align: center;
+    font-size: 1.0em;
+    letter-spacing: 1px;
+    padding: 10px;
+    color: Blue;
+}
+.gallery-image {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-image img {
+  height: 250px;
+  width: 350px;
+  transform: scale(1.0);
+  transition: transform 0.4s ease;
+}
+
+.img-box {
+  box-sizing: content-box;
+  margin: 10px;
+  height: 250px;
+  width: 350px;
+  overflow: hidden;
+  display: inline-block;
+  color: white;
+  position: relative;
+  background-color: white;
+}
+
+.caption {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  opacity: 0.0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparent-box {
+  height: 250px;
+  width: 350px;
+  background-color:rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s ease;
+}
+
+.img-box:hover img { 
+  transform: scale(1.1);
+}
+
+.img-box:hover .transparent-box {
+  background-color:rgba(0, 0, 0, 0.5);
+}
+
+.img-box:hover .caption {
+  transform: translateY(-20px);
+  opacity: 1.0;
+}
+
+.img-box:hover {
+  cursor: pointer;
+}
+
+.caption > p:nth-child(2) {
+  font-size: 0.8em;
+}
+
+.opacity-low {
+  opacity: 0.5;
 }
 </style>
 <body>
@@ -55,7 +150,6 @@ div.b {
 <option value="https://twake.github.io/gubedcet21/colleges/wgce">West Guwahati College of Education</option> 
 <option value="https://twake.github.io/gubedcet21/colleges/namce">Nazir Ajmal Memorial College of Education</option> 
 <option value="https://twake.github.io/gubedcet21/colleges/pcs">Province College, Sonapur</option> 
-
 <option value="https://twake.github.io/gubedcet21/colleges/kb">Krishna Bora B.Ed. College</option> 
 <option value="https://twake.github.io/gubedcet21/colleges/ham">HAM-AK Rural College of Education</option> 
 </select> 
@@ -64,9 +158,67 @@ function handleSelect(elm){
     window.location = elm.value+".html"; /* .html if html file */ 
 } 
 </script> 
-<h2>Name of College</h2>
-<p>Desc</p>
+
+
 <br/><br/>
+<p class="heading">Name of College</p>
+<p class="desc">Desc</p>
+  <div class="gallery-image">
+    <div class="img-box">
+      <img src="https://picsum.photos/350/250?image=444" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Library</p>
+          <p class="opacity-low">Architect Design</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="https://picsum.photos/350/250/?image=232" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Night Sky</p>
+          <p class="opacity-low">Cinematic</p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="https://picsum.photos/350/250/?image=431" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Tea Talk</p>
+          <p class="opacity-low">Composite</p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="https://picsum.photos/350/250?image=474" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Road</p>
+          <p class="opacity-low">Landscape</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="https://picsum.photos/350/250?image=344" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Sea</p>
+          <p class="opacity-low">Cityscape</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="https://picsum.photos/350/250?image=494" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>Vintage</p>
+          <p class="opacity-low">Cinematic</p>
+        </div>
+      </div> 
+    </div>
+  </div>
 </h3><p style="color:Blue;"><a href="https://raw.githubusercontent.com/twake/gubedcet21/main/assets/list.pdf" target="_blank" rel="noopener norefferer"> Click here for the list of the Affiliated Colleges (as per 05/01/2022 Notice).</a></p></h3>
 </div>
 <p><a href="https://github.com/twake/gubedcet21/" target="_blank" rel="noopener norefferer">Source Code</a><br/>
