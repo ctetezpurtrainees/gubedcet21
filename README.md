@@ -1,5 +1,5 @@
 ## This repository contains the merit list of various colleges for admission into B.Ed. course (2021-23) under Gauhati University.
-## hosted at [https://twake.github.io/gubedcet21/](https://twake.github.io/gubedcet21/)
+## hosted at [https://ctetezpurtrainees.github.io/gubedcet21/](https://ctetezpurtrainees.github.io/gubedcet21/)
 ## The merit lists were collected from WhatsApp and Telegram groups. 
 ## If you have any updates regarding any misseing merit list [e-mail me](mailto:sbus+osm@simplelogin.co). 
 
